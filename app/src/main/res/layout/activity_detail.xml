@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="14dp"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_detail_photo"
+                android:layout_width="180dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                tools:src="@color/colorAccent" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_titlee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="judul"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@color/colorGold"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="RELEASE DATE"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                android:text="RUNTIME"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_release"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="9 Agustus 2019"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:textColor="#fff"
+                android:background="@color/colorGold"/>
+
+            <TextView
+                android:id="@+id/txt_runtime"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="101 min"
+                android:fontFamily="serif"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:textColor="#fff"
+                android:background="@color/colorGold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="GENRE"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animation -  Action"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:background="@color/colorGold"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="COMPANIES"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_companies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toei Animation"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:background="@color/colorGold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="DESCRIPTION"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One Piece: Stampede is a stand-alone film that celebrates"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:background="@color/colorGold"
+            />
+    </LinearLayout>
+
+</ScrollView>
